@@ -3,4 +3,4 @@ popConsecutiveAnimationsEx
 
 Demonstrates a way to do consecutive animations with Facebook's Pop Library.
 
-![Example gif](https://db.tt/vvSwEqKM "demo")
+![Example](https://www.dropbox.com/lightbox/home?select=pop-consecutive-animations-ex.gif "demo gif")
