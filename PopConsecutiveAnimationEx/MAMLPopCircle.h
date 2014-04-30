@@ -28,6 +28,8 @@ typedef NS_ENUM(NSInteger, CircleState) {
 
 @interface MAMLPopCircle : UIView <POPAnimationDelegate>
 
+- (id)initWithFrame:(CGRect)frame OnColor:(UIColor *)_onColor OffColor:(UIColor *)_offColor;
+
 @property BOOL state;
 
 @end

@@ -18,6 +18,8 @@ typedef NS_ENUM(NSInteger, LabelState) {
 
 @interface MAMLPopLabel : UILabel
 
+- (id)initWithFrame:(CGRect)frame OnColor:(UIColor *)_onColor OffColor:(UIColor *)_offColor OnText:(NSString *)_onText OffText:(NSString *)_offText;
+
 @property BOOL state;
 
 @end

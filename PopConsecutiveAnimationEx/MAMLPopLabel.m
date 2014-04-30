@@ -8,14 +8,27 @@
 
 #import "MAMLPopLabel.h"
 
+@interface MAMLPopLabel ()
+
+@property (nonatomic) UIColor  *offColor;
+@property (nonatomic) NSString *offText;
+@property (nonatomic) UIColor  *onColor;
+@property (nonatomic) NSString *onText;
+
+@end
+
 @implementation MAMLPopLabel
 
-@synthesize state;
+@synthesize offColor, offText, onColor, onText, state;
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame OnColor:(UIColor *)_onColor OffColor:(UIColor *)_offColor OnText:(NSString *)_onText OffText:(NSString *)_offText
 {
     self = [super initWithFrame:frame];
     if (self) {
+        onText = _onText;
+        offText = _offText;
+        onColor = _onColor;
+        offColor = _offColor;
         self.text = @"Off";
         self.textColor = [UIColor lightGrayColor];
         self.font = [UIFont systemFontOfSize:12];
@@ -39,13 +52,13 @@
 {
     switch (_state) {
         case LabelStateOn:
-            self.text = @"On";
-            self.textColor = [UIColor greenColor];
+            self.text = onText;
+            self.textColor = onColor;
             break;
             
         default:
-            self.text = @"Off";
-            self.textColor = [UIColor lightGrayColor];
+            self.text = offText;
+            self.textColor = offColor;
             break;
     }
 }

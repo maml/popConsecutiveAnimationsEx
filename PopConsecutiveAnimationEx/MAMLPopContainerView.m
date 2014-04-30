@@ -19,23 +19,24 @@ typedef NS_ENUM(NSInteger, ViewState) {
 @property (strong, nonatomic) MAMLPopLabel  *label;
 @property BOOL state;
 
+@property (nonatomic) NSString *onText;
+@property (nonatomic) NSString *offText;
+@property (nonatomic) UIColor  *onColor;
+@property (nonatomic) UIColor  *offColor;
+
 @end
 
 @implementation MAMLPopContainerView
 
-@synthesize circle, label, state;
+@synthesize circle, label, offColor, offText, onColor, onText, state;
 
-- (id)initWithCoder:(NSCoder *)aDecoder
+- (void)awakeFromNib
 {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        state = ViewStateOff;
-        circle = [[MAMLPopCircle alloc] initWithFrame:self.bounds];
-        label  = [[MAMLPopLabel alloc] initWithFrame:self.bounds];
-        [self addSubview:circle];
-        [self addSubview:label];
-    }
-    return self;
+    state = ViewStateOff;
+    circle = [[MAMLPopCircle alloc] initWithFrame:self.bounds OnColor:onColor OffColor:offColor];
+    label  = [[MAMLPopLabel alloc] initWithFrame:self.bounds OnColor:onColor OffColor:offColor OnText:onText OffText:offText];
+    [self addSubview:circle];
+    [self addSubview:label];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

@@ -14,16 +14,22 @@
 @property BOOL needToRemoveAnimation;
 @property (strong, nonatomic) CAShapeLayer *shapeLayer;
 
+@property (nonatomic) UIColor  *offColor;
+@property (nonatomic) UIColor  *onColor;
+
 @end
 
 @implementation MAMLPopCircle
 
-@synthesize needToPopIn, needToRemoveAnimation, shapeLayer, state;
+@synthesize needToPopIn, needToRemoveAnimation, offColor, onColor, shapeLayer, state;
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame OnColor:(UIColor *)_onColor OffColor:(UIColor *)_offColor;
 {
     self = [super initWithFrame:frame];
     if (self) {
+        onColor = _onColor;
+        offColor = _offColor;
+        
         // Sets up the circle with respect to the frame within which it's initialized
         shapeLayer = [CAShapeLayer layer];
         shapeLayer.strokeColor = [[UIColor lightGrayColor] CGColor];
@@ -33,10 +39,10 @@
         CGFloat midY = CGRectGetMidY(self.bounds);
         CGPoint center = CGPointMake(midX, midY);
         UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center
-                                                         radius:self.bounds.size.width/2
-                                                     startAngle:0
-                                                       endAngle:(2 * M_PI)
-                                                      clockwise:YES];
+                                                            radius:self.bounds.size.width/2
+                                                        startAngle:0
+                                                          endAngle:(2 * M_PI)
+                                                         clockwise:YES];
         [path closePath];
         shapeLayer.path = path.CGPath;
         [self.layer addSublayer:shapeLayer];
@@ -63,12 +69,12 @@
 {
     switch (_state) {
         case CircleStateOn:
-            shapeLayer.strokeColor = [[UIColor greenColor] CGColor];
+            shapeLayer.strokeColor = [onColor CGColor];
             [self popOut];
             break;
             
         default:
-            shapeLayer.strokeColor = [[UIColor lightGrayColor] CGColor];
+            shapeLayer.strokeColor = [offColor CGColor];
             [self popOut];
             break;
     }

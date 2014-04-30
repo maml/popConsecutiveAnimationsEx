@@ -16,4 +16,6 @@
 #import "MAMLPopCircle.h"
 #import "MAMLPopLabel.h"
 
-@interface MAMLPopContainerView : UIView ; @end
+@interface MAMLPopContainerView : UIView
+
+@end
