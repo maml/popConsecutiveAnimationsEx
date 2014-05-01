@@ -21,9 +21,9 @@
 		C9751F86191166EF008AC598 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9751F68191166EF008AC598 /* UIKit.framework */; };
 		C9751F8E191166EF008AC598 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9751F8C191166EF008AC598 /* InfoPlist.strings */; };
 		C9751F90191166EF008AC598 /* PopConsecutiveAnimationExTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9751F8F191166EF008AC598 /* PopConsecutiveAnimationExTests.m */; };
-		C9751FA219116BBF008AC598 /* MAMLPopContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9751FA019116BBF008AC598 /* MAMLPopContainerView.m */; };
-		C9751FA519116BD9008AC598 /* MAMLPopCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9751FA419116BD9008AC598 /* MAMLPopCircle.m */; };
-		C9A5164419116EEF005F198B /* MAMLPopLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A5164319116EEF005F198B /* MAMLPopLabel.m */; };
+		C9A5164D1911CD01005F198B /* MAMLPopCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A516481911CD01005F198B /* MAMLPopCircle.m */; };
+		C9A5164E1911CD01005F198B /* MAMLPopContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A5164A1911CD01005F198B /* MAMLPopContainerView.m */; };
+		C9A5164F1911CD01005F198B /* MAMLPopLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A5164C1911CD01005F198B /* MAMLPopLabel.m */; };
 		CE7ADA56A33442C6A58B3488 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F48EA83E080C441C8655FDEA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,12 +57,12 @@
 		C9751F8B191166EF008AC598 /* PopConsecutiveAnimationExTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PopConsecutiveAnimationExTests-Info.plist"; sourceTree = "<group>"; };
 		C9751F8D191166EF008AC598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C9751F8F191166EF008AC598 /* PopConsecutiveAnimationExTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopConsecutiveAnimationExTests.m; sourceTree = "<group>"; };
-		C9751FA019116BBF008AC598 /* MAMLPopContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMLPopContainerView.m; sourceTree = "<group>"; };
-		C9751FA119116BBF008AC598 /* MAMLPopContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMLPopContainerView.h; sourceTree = "<group>"; };
-		C9751FA319116BD9008AC598 /* MAMLPopCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMLPopCircle.h; sourceTree = "<group>"; };
-		C9751FA419116BD9008AC598 /* MAMLPopCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMLPopCircle.m; sourceTree = "<group>"; };
-		C9A5164219116EEF005F198B /* MAMLPopLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMLPopLabel.h; sourceTree = "<group>"; };
-		C9A5164319116EEF005F198B /* MAMLPopLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMLPopLabel.m; sourceTree = "<group>"; };
+		C9A516471911CD01005F198B /* MAMLPopCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMLPopCircle.h; sourceTree = "<group>"; };
+		C9A516481911CD01005F198B /* MAMLPopCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMLPopCircle.m; sourceTree = "<group>"; };
+		C9A516491911CD01005F198B /* MAMLPopContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMLPopContainerView.h; sourceTree = "<group>"; };
+		C9A5164A1911CD01005F198B /* MAMLPopContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMLPopContainerView.m; sourceTree = "<group>"; };
+		C9A5164B1911CD01005F198B /* MAMLPopLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAMLPopLabel.h; sourceTree = "<group>"; };
+		C9A5164C1911CD01005F198B /* MAMLPopLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAMLPopLabel.m; sourceTree = "<group>"; };
 		E2B3E9501AA243E5A71FFB7B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F48EA83E080C441C8655FDEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,7 +127,7 @@
 		C9751F6A191166EF008AC598 /* PopConsecutiveAnimationEx */ = {
 			isa = PBXGroup;
 			children = (
-				C9751F9F19116B7F008AC598 /* Views */,
+				C9A516461911CD01005F198B /* Library */,
 				C9751F73191166EF008AC598 /* MAMLAppDelegate.h */,
 				C9751F74191166EF008AC598 /* MAMLAppDelegate.m */,
 				C9751F76191166EF008AC598 /* Main.storyboard */,
@@ -168,17 +168,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C9751F9F19116B7F008AC598 /* Views */ = {
+		C9A516461911CD01005F198B /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				C9751FA119116BBF008AC598 /* MAMLPopContainerView.h */,
-				C9751FA019116BBF008AC598 /* MAMLPopContainerView.m */,
-				C9751FA319116BD9008AC598 /* MAMLPopCircle.h */,
-				C9751FA419116BD9008AC598 /* MAMLPopCircle.m */,
-				C9A5164219116EEF005F198B /* MAMLPopLabel.h */,
-				C9A5164319116EEF005F198B /* MAMLPopLabel.m */,
+				C9A516471911CD01005F198B /* MAMLPopCircle.h */,
+				C9A516481911CD01005F198B /* MAMLPopCircle.m */,
+				C9A516491911CD01005F198B /* MAMLPopContainerView.h */,
+				C9A5164A1911CD01005F198B /* MAMLPopContainerView.m */,
+				C9A5164B1911CD01005F198B /* MAMLPopLabel.h */,
+				C9A5164C1911CD01005F198B /* MAMLPopLabel.m */,
 			);
-			name = Views;
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,12 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A5164E1911CD01005F198B /* MAMLPopContainerView.m in Sources */,
 				C9751F71191166EF008AC598 /* main.m in Sources */,
-				C9751FA219116BBF008AC598 /* MAMLPopContainerView.m in Sources */,
-				C9751FA519116BD9008AC598 /* MAMLPopCircle.m in Sources */,
 				C9751F75191166EF008AC598 /* MAMLAppDelegate.m in Sources */,
+				C9A5164D1911CD01005F198B /* MAMLPopCircle.m in Sources */,
 				C9751F7B191166EF008AC598 /* MAMLViewController.m in Sources */,
-				C9A5164419116EEF005F198B /* MAMLPopLabel.m in Sources */,
+				C9A5164F1911CD01005F198B /* MAMLPopLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
