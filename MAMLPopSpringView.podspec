@@ -34,6 +34,6 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "git@github.com:maml/popConsecutiveAnimationsEx.git", :commit => "fd9e514" }
+  s.source       = { :git => "git@github.com:maml/popConsecutiveAnimationsEx.git", :commit => "1dba102" }
   s.source_files  = "Library/", "Library/*.{h,m}"
 end
